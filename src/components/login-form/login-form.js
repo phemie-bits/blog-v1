@@ -16,7 +16,7 @@ export default function LoginForm() {
       <button>Login</button>
       {state?.error && <p style={{ color: "red" }}>{state.error}</p>}
       <Link href="/register">
-        Don't have an account? <b>Register</b>
+        Dont have an account? <b>Register</b>
       </Link>
     </form>
   );

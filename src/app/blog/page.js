@@ -4,7 +4,8 @@ import { getPosts } from "@/lib/data";
 
 //FETCH DATA WITH AN API
 const getData = async function () {
-  const res = await fetch("http://localhost:3000/api/blog");
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const res = await fetch(`${baseUrl}/api/blog`);
 
   if (!res.ok) {
     throw new Error("Something went wrong");

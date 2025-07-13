@@ -14,7 +14,7 @@ export default function AdminPostForm({userId}) {
       <input type="text" name="slug" placeholder="slug" />
       <input type="text" name="img" placeholder="img" />
       <textarea type="text" name="desc" placeholder="desc" rows={10} />
-      <button>Add</button>
+      <button>ADD POST</button>
       <p style={{color : "red"}}>{state && state.error}</p>
     </form>
   );

@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    align-content: center;
     /*   */
 }
 
@@ -11,8 +12,18 @@
 }
 
 .imageContainer{
-    flex:1;
+    flex:1.2;
     position: relative;
+}
+.heroImg{
+    width: 100%;
+    object-fit:contain;
+}
+
+
+.brandImg{
+    width: 100%;
+    object-fit:contain;
 }
 
 .brands{
@@ -23,7 +34,7 @@
 }
 
 .title{
-    font-size: 90px;
+    font-size: 60px;
 }
 
 .desc{
@@ -42,6 +53,13 @@
     border: solid;
     
 }
+
+.button:hover{
+    color: white;
+    background-color: black;
+}
+
+
 
 @media (max-width: 1024px){
     .container{

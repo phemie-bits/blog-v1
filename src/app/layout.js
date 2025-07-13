@@ -2,12 +2,12 @@ import NavBar from "@/components/nav-bar/nav-bar";
 import "./globals.css";
 import Footer from "@/components/footer/footer";
 
-
-
-
 export const metadata = {
-  title: "",
-  description: "",
+  title: "Kara",
+  description: "Creative blogging",
+  icons: {
+    icon: "/favicon.png",
+  }, // path to your favicon in public/
 };
 
 export default function RootLayout({ children }) {
@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="container">
-           <NavBar />
-             {children}
-           <Footer />
+          <NavBar />
+          {children}
+          <Footer />
         </div>
       </body>
     </html>

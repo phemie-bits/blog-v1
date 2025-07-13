@@ -82,7 +82,7 @@ export async function loginHandler(prevState, formData) {
 
 //ADMIN FUNCTIONS
 export async function addPost(prevState, formData) {
-  const { title, desc, slug, userId } = Object.fromEntries(formData);
+  const { title, desc, slug, userId, img } = Object.fromEntries(formData);
   try {
     connectToDb();
     const newPost = new Post({
@@ -90,6 +90,7 @@ export async function addPost(prevState, formData) {
       desc,
       slug,
       userId,
+      img,
     });
 
     await newPost.save();

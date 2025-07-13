@@ -1,25 +1,46 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .container input,
-  .container textarea,
-  .container select {
-    padding: 20px;
-    background-color: var(--bgSoft);
-    border: none;
-    border-radius: 5px;
-    color: var(--textColor);
-  }
-  
-  .container button {
-    padding: 20px;
-    cursor: pointer;
-    background-color: var(--btn);
-    border: none;
-    border-radius: 5px;
-    color: var(--textColor);
-    font-weight: bold;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.container input,
+.container textarea,
+.container select {
+  padding: 20px;
+  background-color: var(--bgSoft);
+  border: none;
+  border-bottom: 2px solid grey; /* or any color */
+  outline: none;
+  color: var(--textColor);
+}
+
+.container input:focus,
+.container textarea:focus,
+.container select:focus {
+  border-bottom: 2px solid rgb(0, 0, 0); /* Highlight color on focus */
+}
+
+
+
+
+
+
+
+
+.container button {
+  padding: 20px;
+  cursor: pointer;
+  background-color: var(--btn);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+.container button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
